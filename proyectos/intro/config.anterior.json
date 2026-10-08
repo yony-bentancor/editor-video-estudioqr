@@ -1,0 +1,243 @@
+{
+ "general": {
+  "brand": "ESTUDIO QR",
+  "hint": "SCROLL",
+  "smooth": true,
+  "particles": 0.7,
+  "grain": 0.2,
+  "grade": 0.35
+ },
+ "scenes": [
+  {
+   "name": "Origen",
+   "kicker": "ESTUDIO QR",
+   "title": "IDEAS ",
+   "text": "Estudio digital creativo. Dirección, diseño y desarrollo de experiencias.",
+   "size": "l",
+   "ctaText": "",
+   "ctaHref": "",
+   "media": "assets/fotos/1790730503_img1.png",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": false,
+    "shape": "crystal",
+    "pos": "center",
+    "size": 1,
+    "morph": 0.5
+   },
+   "motion": "dolly",
+   "length": 700,
+   "phases": {
+    "enter": 60,
+    "develop": 59,
+    "hold": 67,
+    "exit": 3
+   },
+   "palette": {
+    "bg": "#7494b4",
+    "ink": "#efe9dc",
+    "accent": "#e3a857"
+   },
+   "grade": 0.65
+  },
+  {
+   "name": "Fragmentación",
+   "kicker": "02 — Fragmentación",
+   "title": "",
+   "text": "",
+   "size": "l",
+   "ctaText": "",
+   "ctaHref": "",
+   "media": "",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": true,
+    "shape": "crystal",
+    "pos": "right",
+    "size": 1,
+    "morph": 0.4
+   },
+   "motion": "orbit",
+   "length": 300,
+   "phases": {
+    "enter": 18,
+    "develop": 37,
+    "hold": 30,
+    "exit": 15
+   },
+   "palette": {
+    "bg": "#180e0c",
+    "ink": "#efe9dc",
+    "accent": "#bab2b0"
+   },
+   "grade": 0.35
+  },
+  {
+   "name": "Metamorfosis",
+   "kicker": "03 — Metamorfosis",
+   "title": "Algo nuevo\n",
+   "text": "Los fragmentos se reordenan. El objeto atraviesa el texto y la imagen.",
+   "size": "l",
+   "ctaText": "",
+   "ctaHref": "",
+   "media": "assets/fotos/1790731344_img2.png",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": false,
+    "shape": "knot",
+    "pos": "center",
+    "size": 1.15,
+    "morph": 0.9
+   },
+   "motion": "dolly",
+   "length": 700,
+   "phases": {
+    "enter": 60,
+    "develop": 37,
+    "hold": 11,
+    "exit": 15
+   },
+   "palette": {
+    "bg": "#0a1613",
+    "ink": "#efe9dc",
+    "accent": "#5fd0a8"
+   },
+   "grade": 0
+  },
+  {
+   "name": "Experiencias",
+   "kicker": "04 — Experiencias",
+   "title": "hola",
+   "text": "Proyectos que existen dentro del espacio, no en tarjetas.",
+   "size": "l",
+   "ctaText": "",
+   "ctaHref": "",
+   "media": "assets/fotos/1790732060_img3.png",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": false,
+    "shape": "sphere",
+    "pos": "left",
+    "size": 0.8,
+    "morph": 0.3
+   },
+   "motion": "pullout",
+   "length": 420,
+   "phases": {
+    "enter": 18,
+    "develop": 37,
+    "hold": 30,
+    "exit": 15
+   },
+   "palette": {
+    "bg": "#0b0f1d",
+    "ink": "#efe9dc",
+    "accent": "#5b7cff"
+   },
+   "grade": 0.35
+  },
+  {
+   "name": "Digital / Physical",
+   "kicker": "05 — Digital / Physical",
+   "title": "Lo real se vuelve\n*interfaz*",
+   "text": "Fotografía y vídeo reales que se transforman en geometría y pantalla.",
+   "size": "l",
+   "ctaText": "",
+   "ctaHref": "",
+   "media": "assets/video/showreel.mp4",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": true,
+    "shape": "crystal",
+    "pos": "right",
+    "size": 1,
+    "morph": 0.4
+   },
+   "motion": "pullout",
+   "length": 300,
+   "phases": {
+    "enter": 18,
+    "develop": 37,
+    "hold": 30,
+    "exit": 15
+   },
+   "palette": {
+    "bg": "#12140c",
+    "ink": "#efe9dc",
+    "accent": "#c8f06a"
+   },
+   "grade": 0.35
+  },
+  {
+   "name": "Manifiesto",
+   "kicker": "06 — Manifiesto",
+   "title": "NO HACEMOS PÁGINAS.\n*CREAMOS EXPERIENCIAS.*",
+   "text": "",
+   "size": "l",
+   "ctaText": "",
+   "ctaHref": "",
+   "media": "assets/fotos/escena6.jpg",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": false,
+    "shape": "knot",
+    "pos": "center",
+    "size": 1,
+    "morph": 0.5
+   },
+   "motion": "still",
+   "length": 380,
+   "phases": {
+    "enter": 20,
+    "develop": 15,
+    "hold": 50,
+    "exit": 15
+   },
+   "palette": {
+    "bg": "#e9e4d8",
+    "ink": "#14120e",
+    "accent": "#c8401c"
+   },
+   "grade": 0.2
+  },
+  {
+   "name": "Cierre",
+   "kicker": "07 — Cierre",
+   "title": "ESTUDIO QR.\n*HABLEMOS.*",
+   "text": "",
+   "size": "l",
+   "ctaText": "Escribinos",
+   "ctaHref": "mailto:hola@qrestudio.uy",
+   "media": "assets/fotos/escena7.jpg",
+   "fragment": 1,
+   "layers": [],
+   "obj": {
+    "on": true,
+    "shape": "knot",
+    "pos": "center",
+    "size": 0.9,
+    "morph": 0.2
+   },
+   "motion": "dolly",
+   "length": 300,
+   "phases": {
+    "enter": 25,
+    "develop": 35,
+    "hold": 40,
+    "exit": 0
+   },
+   "palette": {
+    "bg": "#10151a",
+    "ink": "#efe9dc",
+    "accent": "#e3a857"
+   },
+   "grade": 0.35
+  }
+ ]
+}

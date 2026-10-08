@@ -1,0 +1,636 @@
+{
+  "version": 2,
+  "general": {
+    "brand": "ESTUDIO QR",
+    "hint": "",
+    "smooth": false,
+    "smoothness": 0.09,
+    "particles": 0.24,
+    "grain": 0.035,
+    "grade": 0.2,
+    "nav": "none",
+    "keys": true,
+    "snap": false,
+    "progress": true,
+    "counter": false,
+    "loader": "ESTUDIO",
+    "scrollScale": 1,
+    "autoplay": {
+      "on": false,
+      "speed": 0.35,
+      "resume": 4,
+      "loop": false
+    },
+    "duration": 44
+  },
+  "scenes": [
+    {
+      "name": "Origen",
+      "kicker": "",
+      "title": "Toda idea",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_01_origen.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.12,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "crystal",
+        "pos": "center",
+        "size": 1,
+        "morph": 0.5
+      },
+      "motion": "custom",
+      "length": 620,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#e8e6e1",
+        "ink": "#17150f",
+        "accent": "#be8854"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.03,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.18,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      },
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 15
+        }
+      }
+    },
+    {
+      "name": "Fragmentación",
+      "kicker": "",
+      "title": "empieza con una forma.",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_02_fragmentacion.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.16,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "crystal",
+        "pos": "right",
+        "size": 1,
+        "morph": 0.4
+      },
+      "motion": "panR",
+      "length": 560,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#cfccc6",
+        "ink": "#121212",
+        "accent": "#be8854"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.15,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.27,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Metamorfosis",
+      "kicker": "",
+      "title": "",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_03_metamorfosis.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.23,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "knot",
+        "pos": "center",
+        "size": 1.15,
+        "morph": 0.9
+      },
+      "motion": "pullout",
+      "length": 620,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#0e0f10",
+        "ink": "#efe9dc",
+        "accent": "#61cbbc"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.25,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.04,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Experiencias",
+      "kicker": "",
+      "title": "Más allá\nde lo visible.",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_04_experiencias.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.25,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "sphere",
+        "pos": "left",
+        "size": 0.8,
+        "morph": 0.3
+      },
+      "motion": "custom",
+      "length": 660,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#ebe9e4",
+        "ink": "#121212",
+        "accent": "#60d3cb"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.04,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.65,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      },
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 15
+        }
+      }
+    },
+    {
+      "name": "Digital / Physical",
+      "kicker": "",
+      "title": "",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/video/paisaje_deriva.mp4",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.18,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "crystal",
+        "pos": "right",
+        "size": 1,
+        "morph": 0.4
+      },
+      "motion": "dolly",
+      "length": 700,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#d9d9d9",
+        "ink": "#101010",
+        "accent": "#92a8ec"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "iris",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "scrub",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "Fondo en video atado al scroll. Alternativa fija: assets/fotos/fondo_05_digital_physical.jpg",
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.06,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.12,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Manifiesto",
+      "kicker": "",
+      "title": "Creamos\n*experiencias.*",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_06_manifiesto.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.16,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "knot",
+        "pos": "center",
+        "size": 1,
+        "morph": 0.5
+      },
+      "motion": "custom",
+      "length": 600,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#eceae5",
+        "ink": "#14120e",
+        "accent": "#b69acb"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.08,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.2,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cierre",
+      "kicker": "",
+      "title": "ESTUDIO QR",
+      "text": "Ideas que se transforman.",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_07_cierre.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.13,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "knot",
+        "pos": "center",
+        "size": 0.9,
+        "morph": 0.2
+      },
+      "motion": "custom",
+      "length": 640,
+      "phases": {
+        "enter": 18,
+        "develop": 52,
+        "hold": 15,
+        "exit": 0
+      },
+      "palette": {
+        "bg": "#0f1114",
+        "ink": "#efe9dc",
+        "accent": "#d5af79"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "sine"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.14,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.03,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          }
+        ]
+      },
+      "tracks": {
+        "auto": false,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 0
+        },
+        "meta": {
+          "from": 0,
+          "to": 100,
+          "rin": 15,
+          "rout": 0
+        }
+      }
+    }
+  ],
+  "project": {
+    "name": "Intro cinematográfica"
+  },
+  "audio": {
+    "tracks": [
+      {
+        "id": "score",
+        "name": "Banda sonora cinematográfica",
+        "src": "assets/audio/estudio-qr-cinematic.mp3",
+        "offset": 0,
+        "trim": 0,
+        "duration": 44,
+        "volume": 0.72,
+        "fadeIn": 1.5,
+        "fadeOut": 3,
+        "loop": false,
+        "muted": false
+      }
+    ]
+  }
+}

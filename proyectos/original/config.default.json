@@ -1,0 +1,824 @@
+{
+  "version": 2,
+  "general": {
+    "brand": "ESTUDIO QR",
+    "hint": "SCROLL",
+    "smooth": true,
+    "smoothness": 0.09,
+    "particles": 0.5,
+    "grain": 0.1,
+    "grade": 0.2,
+    "nav": "dots",
+    "keys": true,
+    "snap": false,
+    "progress": true,
+    "counter": true,
+    "loader": "ESTUDIO",
+    "scrollScale": 1,
+    "autoplay": {
+      "on": false,
+      "speed": 0.35,
+      "resume": 4,
+      "loop": true
+    },
+    "duration": 60
+  },
+  "scenes": [
+    {
+      "name": "Origen",
+      "kicker": "ESTUDIO QR",
+      "title": "",
+      "text": "Estudio digital creativo. Dirección, diseño y desarrollo de experiencias.",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_01_origen.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.45,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "crystal",
+        "pos": "center",
+        "size": 1,
+        "morph": 0.5
+      },
+      "motion": "custom",
+      "length": 700,
+      "phases": {
+        "enter": 60,
+        "develop": 59,
+        "hold": 67,
+        "exit": 3
+      },
+      "palette": {
+        "bg": "#e8e6e1",
+        "ink": "#17150f",
+        "accent": "#c8401c"
+      },
+      "textPos": "bl",
+      "textAnim": "fade",
+      "scrim": 0.2,
+      "trans": {
+        "type": "mask",
+        "dir": "left",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.1,
+            "x": 0.55,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 32,
+            "s": 1,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 63,
+            "s": 1.22,
+            "x": 0.6,
+            "y": 0.55,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 97,
+            "s": 1.25,
+            "x": 0.61,
+            "y": 0.55,
+            "r": 0,
+            "e": "linear"
+          },
+          {
+            "t": 100,
+            "s": 1.45,
+            "x": 0.64,
+            "y": 0.56,
+            "r": 0,
+            "e": "in"
+          }
+        ]
+      },
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 0,
+          "to": 100,
+          "rin": 19,
+          "rout": 3
+        },
+        "meta": {
+          "from": 31.7,
+          "to": 99.2,
+          "rin": 10.9,
+          "rout": 3
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 31.7,
+          "rout": 3
+        }
+      }
+    },
+    {
+      "name": "Fragmentación",
+      "kicker": "02 — Fragmentación",
+      "title": "",
+      "text": "",
+      "size": "l",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_02_fragmentacion.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.05,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "crystal",
+        "pos": "right",
+        "size": 1,
+        "morph": 0.4
+      },
+      "motion": "panR",
+      "length": 300,
+      "phases": {
+        "enter": 18,
+        "develop": 37,
+        "hold": 30,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#cfccc6",
+        "ink": "#121212",
+        "accent": "#c8401c"
+      },
+      "textPos": "bl",
+      "textAnim": "scramble",
+      "scrim": 0.2,
+      "trans": {
+        "type": "pixel",
+        "dir": "left",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 0.9,
+          "to": 100,
+          "rin": 10.8,
+          "rout": 8.3
+        },
+        "meta": {
+          "from": 18,
+          "to": 92.5,
+          "rin": 12.9,
+          "rout": 6.8
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": true,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.35,
+            "x": 0.38,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 18,
+            "s": 1.3,
+            "x": 0.4,
+            "y": 0.5,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 55,
+            "s": 1.3,
+            "x": 0.6,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 85,
+            "s": 1.3,
+            "x": 0.62,
+            "y": 0.5,
+            "r": 0,
+            "e": "linear"
+          },
+          {
+            "t": 100,
+            "s": 1.34,
+            "x": 0.64,
+            "y": 0.5,
+            "r": 0,
+            "e": "in"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Metamorfosis",
+      "kicker": "03 — Metamorfosis",
+      "title": "\n",
+      "text": "Los fragmentos se reordenan. El objeto atraviesa el texto y la imagen.",
+      "size": "l",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_03_metamorfosis.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.12,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "knot",
+        "pos": "center",
+        "size": 1.15,
+        "morph": 0.9
+      },
+      "motion": "pullout",
+      "length": 930,
+      "phases": {
+        "enter": 60,
+        "develop": 37,
+        "hold": 11,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#0e0f10",
+        "ink": "#efe9dc",
+        "accent": "#5fd0a8"
+      },
+      "textPos": "bl",
+      "textAnim": "blur",
+      "scrim": 0.35,
+      "trans": {
+        "type": "blur",
+        "dir": "left",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 2.4,
+          "to": 100,
+          "rin": 29.3,
+          "rout": 6.7
+        },
+        "meta": {
+          "from": 48.8,
+          "to": 93.9,
+          "rin": 10.5,
+          "rout": 5.5
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 48.8,
+          "rout": 12.2
+        }
+      },
+      "cam": {
+        "auto": true,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.52,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 48.78,
+            "s": 1.38,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 78.86,
+            "s": 1.1,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 87.8,
+            "s": 1.08,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "linear"
+          },
+          {
+            "t": 100,
+            "s": 1.02,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "in"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Experiencias",
+      "kicker": "04 — Experiencias",
+      "title": "",
+      "text": "Proyectos que existen dentro del espacio, no en tarjetas.",
+      "size": "l",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_04_experiencias.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.06,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "sphere",
+        "pos": "left",
+        "size": 0.8,
+        "morph": 0.3
+      },
+      "motion": "custom",
+      "length": 420,
+      "phases": {
+        "enter": 18,
+        "develop": 37,
+        "hold": 30,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#ebe9e4",
+        "ink": "#121212",
+        "accent": "#3b5bff"
+      },
+      "textPos": "bl",
+      "textAnim": "rise",
+      "scrim": 0.25,
+      "trans": {
+        "type": "iris",
+        "dir": "left",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.12,
+            "x": 0.62,
+            "y": 0.47,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 18,
+            "s": 1.03,
+            "x": 0.58,
+            "y": 0.48,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 55,
+            "s": 1.55,
+            "x": 0.64,
+            "y": 0.5,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 85,
+            "s": 1.62,
+            "x": 0.65,
+            "y": 0.5,
+            "r": 0,
+            "e": "linear"
+          },
+          {
+            "t": 100,
+            "s": 2.9,
+            "x": 0.66,
+            "y": 0.5,
+            "r": 0,
+            "e": "in"
+          }
+        ]
+      },
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 0.9,
+          "to": 100,
+          "rin": 10.8,
+          "rout": 8.3
+        },
+        "meta": {
+          "from": 18,
+          "to": 92.5,
+          "rin": 12.9,
+          "rout": 6.8
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        }
+      }
+    },
+    {
+      "name": "Digital / Physical",
+      "kicker": "05 — Digital / Physical",
+      "title": "",
+      "text": "Fotografía y vídeo reales que se transforman en geometría y pantalla.",
+      "size": "l",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/video/paisaje_deriva.mp4",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.1,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "crystal",
+        "pos": "right",
+        "size": 1,
+        "morph": 0.4
+      },
+      "motion": "dolly",
+      "length": 300,
+      "phases": {
+        "enter": 18,
+        "develop": 37,
+        "hold": 30,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#d9d9d9",
+        "ink": "#101010",
+        "accent": "#6fd3b0"
+      },
+      "textPos": "bl",
+      "textAnim": "scale",
+      "scrim": 0.3,
+      "trans": {
+        "type": "zoom",
+        "dir": "left",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "scrub",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "Fondo en video atado al scroll. Alternativa fija: assets/fotos/fondo_05_digital_physical.jpg",
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 0.9,
+          "to": 100,
+          "rin": 10.8,
+          "rout": 8.3
+        },
+        "meta": {
+          "from": 18,
+          "to": 92.5,
+          "rin": 12.9,
+          "rout": 6.8
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 18,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": true,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.14,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 18,
+            "s": 1.02,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 55,
+            "s": 1.2,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 85,
+            "s": 1.22,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "linear"
+          },
+          {
+            "t": 100,
+            "s": 1.42,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "in"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Manifiesto",
+      "kicker": "06 —",
+      "title": "*CREAMOS \nEXPERIENCIAS.*",
+      "text": "",
+      "size": "s",
+      "ctaText": "",
+      "ctaHref": "",
+      "media": "assets/fotos/fondo_06_manifiesto.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.05,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "knot",
+        "pos": "center",
+        "size": 1,
+        "morph": 0.5
+      },
+      "motion": "custom",
+      "length": 800,
+      "phases": {
+        "enter": 20,
+        "develop": 15,
+        "hold": 50,
+        "exit": 15
+      },
+      "palette": {
+        "bg": "#eceae5",
+        "ink": "#14120e",
+        "accent": "#c8401c"
+      },
+      "textPos": "ml",
+      "textAnim": "rise",
+      "scrim": 0.85,
+      "trans": {
+        "type": "wipe",
+        "dir": "up",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 1,
+          "to": 100,
+          "rin": 12,
+          "rout": 8.3
+        },
+        "meta": {
+          "from": 20,
+          "to": 92.5,
+          "rin": 5.3,
+          "rout": 6.8
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 20,
+          "rout": 15
+        }
+      },
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.35,
+            "x": 0.62,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 20,
+            "s": 1,
+            "x": 0.5,
+            "y": 0.5,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 35,
+            "s": 1.3,
+            "x": 0.4,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 85,
+            "s": 1.3,
+            "x": 0.38,
+            "y": 0.5,
+            "r": 0,
+            "e": "linear"
+          },
+          {
+            "t": 100,
+            "s": 1.34,
+            "x": 0.36,
+            "y": 0.5,
+            "r": 0,
+            "e": "in"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cierre",
+      "kicker": "07 — Cierre",
+      "title": "ESTUDIO QR.\n",
+      "text": "",
+      "size": "m",
+      "ctaText": "Escribinos",
+      "ctaHref": "https://inmo-ccd0a6e144fd.herokuapp.com/",
+      "media": "assets/fotos/fondo_07_cierre.jpg",
+      "fit": "cover",
+      "fragment": 1,
+      "grade": 0.1,
+      "layers": [],
+      "obj": {
+        "on": false,
+        "shape": "knot",
+        "pos": "center",
+        "size": 0.9,
+        "morph": 0.2
+      },
+      "motion": "custom",
+      "length": 300,
+      "phases": {
+        "enter": 25,
+        "develop": 35,
+        "hold": 40,
+        "exit": 0
+      },
+      "palette": {
+        "bg": "#0f1114",
+        "ink": "#efe9dc",
+        "accent": "#e3a857"
+      },
+      "textPos": "bl",
+      "textAnim": "blur",
+      "scrim": 0.3,
+      "trans": {
+        "type": "fade",
+        "dir": "left",
+        "ease": "inOut"
+      },
+      "video": {
+        "mode": "loop",
+        "rate": 1,
+        "start": 0
+      },
+      "notes": "",
+      "cam": {
+        "auto": false,
+        "keys": [
+          {
+            "t": 0,
+            "s": 1.14,
+            "x": 0.6,
+            "y": 0.5,
+            "r": 0,
+            "e": "inOut"
+          },
+          {
+            "t": 25,
+            "s": 1.03,
+            "x": 0.6,
+            "y": 0.5,
+            "r": 0,
+            "e": "out"
+          },
+          {
+            "t": 60,
+            "s": 1.18,
+            "x": 0.64,
+            "y": 0.48,
+            "r": 0,
+            "e": "sine"
+          },
+          {
+            "t": 100,
+            "s": 1.24,
+            "x": 0.65,
+            "y": 0.48,
+            "r": 0,
+            "e": "linear"
+          }
+        ]
+      },
+      "tracks": {
+        "auto": true,
+        "title": {
+          "from": 1.3,
+          "to": 100,
+          "rin": 15,
+          "rout": 3
+        },
+        "meta": {
+          "from": 25,
+          "to": 100,
+          "rin": 12.3,
+          "rout": 3
+        },
+        "obj": {
+          "from": 0,
+          "to": 100,
+          "rin": 25,
+          "rout": 3
+        }
+      }
+    }
+  ],
+  "project": {
+    "name": "Presentación original V4"
+  },
+  "audio": {
+    "tracks": []
+  }
+}

@@ -1,0 +1,19 @@
+ESTUDIO QR — ACTUALIZACIÓN V6.1
+
+Contraseña: estudioqr. Visible y precargada en el panel.
+Cada proyecto tiene un botón Eliminar con confirmación. Elimina sus escenas,
+audios y archivos del disco. Exportá un ZIP antes si querés conservar una copia.
+Podés eliminar todos los proyectos y luego crear o importar otros.
+Corregida la lectura UTF-8 de los nombres en Windows.
+
+ACTUALIZAR SIN PERDER PROYECTOS
+1. Cerrá el servidor anterior.
+2. Copiá server.py, admin-password.txt y la carpeta editor de este ZIP
+   a la carpeta donde ya usás el programa, reemplazando esos archivos.
+3. Conservá tu carpeta proyectos: no la borres ni la reemplaces.
+4. Ejecutá iniciar.bat y recargá la página con Ctrl+F5.
+Los proyectos guardados en tu computadora, incluido qcasa, se conservan así.
+Si configuraste ADMIN_PASSWORD en el entorno, esa variable tiene prioridad.
+
+También podés descomprimir el ZIP completo en una carpeta nueva; incluye
+los dos proyectos de ejemplo. Los proyectos propios no están en este ZIP.
