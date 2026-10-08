@@ -158,7 +158,15 @@
     const s = Math.max(fit ? .2 : 1, k.s) * (k.r ? coverR(k.r) : 1);
     // el foco (x,y) es un punto de la IMAGEN: se convierte a coordenadas de pantalla según el recorte (cover)
     let ex = k.x, ey = k.y; const ia = o.ar || 16 / 9, va = innerWidth / innerHeight;
-    if (!fit) { if (va < ia) ex = .5 + (k.x - .5) * ia / va; else ey = .5 + (k.y - .5) * va / ia; }
+    if (!fit) {
+      // Pantallas más angostas que la imagen (celular vertical): el recorte se corre hacia el foco de la cámara
+      // para que el sujeto no quede afuera. Si la pantalla tiene la misma forma que la imagen, no cambia nada.
+      let px = .5, py = .5;
+      if (va < ia) { const r = ia / va; if (r > 1.02) px = clamp((.5 - k.x * r) / (1 - r), 0, 1); ex = px * (1 - r) + k.x * r; }
+      else { const r = va / ia; if (r > 1.02) py = clamp((.5 - k.y * r) / (1 - r), 0, 1); ey = py * (1 - r) + k.y * r; }
+      const pos = (px * 100).toFixed(1) + '% ' + (py * 100).toFixed(1) + '%';
+      if (o.op !== pos) { o.op = pos; o.m.querySelectorAll('.sl img,.sl video').forEach(e => { e.style.objectPosition = pos; }); }
+    }
     let xp = -(ex - .5) * s * 100, yp = -(ey - .5) * s * 100;
     if (!fit) { const lim = (s - 1) * 50; xp = clamp(xp, -lim, lim); yp = clamp(yp, -lim, lim); }
     o.m.style.transform = `translate3d(${xp.toFixed(3)}%,${yp.toFixed(3)}%,0) rotate(${(k.r || 0).toFixed(3)}deg) scale(${s.toFixed(4)})`;

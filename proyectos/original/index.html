@@ -60,6 +60,17 @@ body{background:var(--bg);color:var(--ink);font:400 14px/1.6 'DM Mono',ui-monosp
 .guides #gd{display:block;background:linear-gradient(to right,transparent calc(33.33% - .5px),rgba(255,64,160,.55) calc(33.33% - .5px),rgba(255,64,160,.55) calc(33.33% + .5px),transparent calc(33.33% + .5px),transparent calc(66.66% - .5px),rgba(255,64,160,.55) calc(66.66% - .5px),rgba(255,64,160,.55) calc(66.66% + .5px),transparent calc(66.66% + .5px)),linear-gradient(to bottom,transparent calc(33.33% - .5px),rgba(255,64,160,.55) calc(33.33% - .5px),rgba(255,64,160,.55) calc(33.33% + .5px),transparent calc(33.33% + .5px),transparent calc(66.66% - .5px),rgba(255,64,160,.55) calc(66.66% - .5px),rgba(255,64,160,.55) calc(66.66% + .5px),transparent calc(66.66% + .5px))}
 .safe #gd{display:block;outline:1px dashed rgba(80,200,255,.8);outline-offset:-6vw}
 @media(max-width:800px){.tx{bottom:12vh}.k{font-size:10px}#cnt{display:none}.p{font-size:13px}#nav{right:10px}#nav span{display:none}}
+/* celular: textos legibles sobre cualquier imagen y nada encimado */
+@media(max-width:800px){
+.tx{left:7vw;right:7vw;text-shadow:0 1px 2px color-mix(in srgb,var(--bg) 70%,transparent),0 0 22px color-mix(in srgb,var(--bg) 85%,transparent)}
+.scrim{opacity:.75!important}
+.tt{overflow-wrap:anywhere}.tt .l{overflow:visible}.wd{white-space:normal}
+.p{max-width:none;font-size:12.5px;line-height:1.55}
+.k{margin-bottom:1.6vh}
+#hint{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+#nav{gap:2px}#nav i{width:6px;height:6px}
+}
+@media(max-width:800px) and (orientation:portrait){.tx{bottom:16vh}.tx.pos-tl,.tx.pos-tr{top:12vh}}
 @media(prefers-reduced-motion:reduce){#gn{animation:none}}
 </style></head><body>
 <div id="ld">Estudio QR</div>
