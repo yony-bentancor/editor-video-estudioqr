@@ -17,3 +17,16 @@ Si configuraste ADMIN_PASSWORD en el entorno, esa variable tiene prioridad.
 
 También podés descomprimir el ZIP completo en una carpeta nueva; incluye
 los dos proyectos de ejemplo. Los proyectos propios no están en este ZIP.
+
+PUBLICAR EN HEROKU
+1. En Heroku: Create new app → Deploy → conectá el repositorio
+   yony-bentancor/editor-video-estudioqr → Deploy Branch.
+2. En Settings → Config Vars agregá ADMIN_PASSWORD con tu contraseña
+   (solo letras y números). En Heroku la contraseña de admin-password.txt
+   NO funciona porque es pública en GitHub: sin ADMIN_PASSWORD el editor
+   se puede ver pero no permite guardar ni borrar nada.
+3. En el editor, escribí esa contraseña en el campo de contraseña.
+IMPORTANTE: Heroku borra los archivos nuevos cada vez que reinicia la app
+(al menos una vez por día). Los proyectos creados o modificados en Heroku
+vuelven al estado del repositorio. Exportá un ZIP para conservarlos.
+En tu PC (iniciar.bat) todo sigue funcionando igual que antes.

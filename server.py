@@ -8,7 +8,11 @@ MAX=120*1024*1024
 IMG={'.jpg','.jpeg','.png','.webp','.avif','.gif'};VID={'.mp4','.webm'};MOD={'.glb','.obj'};AUD={'.mp3','.wav','.ogg','.m4a','.aac','.flac'}
 EXT=IMG|VID|MOD|AUD
 LOCK=threading.Lock()
-def key():return os.environ.get('ADMIN_PASSWORD') or (ROOT/'admin-password.txt').read_text(encoding='utf-8').strip()
+EN_HEROKU=bool(os.environ.get('DYNO'))
+def key():
+ # En Heroku la contraseña SOLO puede venir de ADMIN_PASSWORD: la del archivo es pública en GitHub.
+ if EN_HEROKU:return os.environ.get('ADMIN_PASSWORD','').strip()
+ return os.environ.get('ADMIN_PASSWORD') or (ROOT/'admin-password.txt').read_text(encoding='utf-8').strip()
 def valid(c):
  if not isinstance(c,dict) or not isinstance(c.get('general'),dict) or not isinstance(c.get('scenes'),list) or not c['scenes']:raise ValueError('El archivo no contiene un proyecto válido.')
  return c
@@ -55,6 +59,7 @@ class H(http.server.SimpleHTTPRequestHandler):
    return
   super().do_GET()
  def do_POST(self):
+  if not key():self.close_connection=True;return self.j(503,{'error':'Falta configurar ADMIN_PASSWORD en Heroku: la edición está desactivada.'})
   if not hmac.compare_digest(self.headers.get('X-Key',''),key()):self.close_connection=True;return self.j(401,{'error':'Ingresá la contraseña del editor.'})
   try:
    n=int(self.headers.get('Content-Length','0'))
@@ -117,4 +122,8 @@ class H(http.server.SimpleHTTPRequestHandler):
   rel=Path('assets')/folder/(uuid.uuid4().hex[:8]+'_'+re.sub(r'[^A-Za-z0-9._-]','_',Path(name).stem)[:40]+ext)
   (p/rel).parent.mkdir(parents=True,exist_ok=True);(p/rel).write_bytes(body);return {'path':str(rel)}
 if __name__=='__main__':
- port=int(os.environ.get('PORT','8000'));print(f'Editor: http://localhost:{port}/');http.server.ThreadingHTTPServer(('127.0.0.1',port),H).serve_forever()
+ port=int(os.environ.get('PORT','8000'))
+ # En tu PC solo escucha en la propia máquina; en Heroku tiene que aceptar conexiones de afuera.
+ host=os.environ.get('HOST') or ('0.0.0.0' if EN_HEROKU else '127.0.0.1')
+ if EN_HEROKU and not key():print('AVISO: falta ADMIN_PASSWORD; el editor se ve pero no permite guardar cambios.',flush=True)
+ print(f'Editor: http://{"localhost" if host=="127.0.0.1" else host}:{port}/',flush=True);http.server.ThreadingHTTPServer((host,port),H).serve_forever()

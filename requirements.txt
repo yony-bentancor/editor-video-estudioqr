@@ -1,0 +1,2 @@
+# El editor solo usa la biblioteca estándar de Python.
+# Este archivo le indica a Heroku que es una app de Python.
